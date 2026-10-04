@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Simple daily push-up, squat, pull-up, dip and sit-up tracker.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>REP Tracker</title>
+</head>
+<body>
+<main class="app">
+  <header>
+    <div>
+      <h1>REP</h1>
+      <p id="dateLabel"></p>
+    </div>
+    <button id="installBtn" class="ghost hidden">Install</button>
+  </header>
+
+  <section class="hero">
+    <span>TODAY</span>
+    <strong id="todayTotal">0</strong>
+    <small>total reps</small>
+  </section>
+
+  <section id="exerciseList"></section>
+
+  <nav class="tabs">
+    <button class="tab active" data-view="today">Today</button>
+    <button class="tab" data-view="calendar">Calendar</button>
+    <button class="tab" data-view="stats">Stats</button>
+  </nav>
+
+  <section id="view"></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
