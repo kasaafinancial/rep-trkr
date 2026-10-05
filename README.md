@@ -1,18 +1,14 @@
 # REP Tracker PWA
 
-A simple offline-capable Android-friendly PWA for tracking push-ups, squats, pull-ups, dips and sit-ups.
+Updated version:
+- Uses the phone/browser's **local calendar date**, not UTC.
+- Preserves existing workout data stored under `repTrackerDataV1`.
+- Day detail from Calendar.
+- Per-exercise 30-day graphs.
+- Daily and per-exercise goals.
+- JSON backup and CSV export.
+- Personal records.
+- LocalStorage only; no account, server, or database.
+- Offline-capable PWA.
 
-## Features
-- +1, +5, +10 and +20 buttons
-- -1 correction button
-- Daily totals
-- Calendar heat/intensity view
-- 30-day trend
-- Lifetime totals
-- Current and longest streak
-- Local storage (data stays in the browser on the device)
-- Installable as a home-screen app
-- Offline after first load
-
-## Deploy
-Upload the contents of this folder to any HTTPS static host such as GitHub Pages, Netlify, Cloudflare Pages, or your own HTTPS website.
+To publish on GitHub Pages, upload these files to the repository root with `index.html` at the root.
